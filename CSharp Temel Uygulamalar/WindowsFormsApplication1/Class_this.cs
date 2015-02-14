@@ -16,6 +16,7 @@ namespace WindowsFormsApplication1
         public Class_this() : this(-1, "noname")
         {
 
+            Console.WriteLine("default constructor59");
 
         }
 
@@ -30,6 +31,13 @@ namespace WindowsFormsApplication1
         {
 
             Console.WriteLine("Constructor2 weight = {0}, name = {1}", weight, name);
+
+        }
+
+        public void yeni2(int weight, string name)
+        {
+
+            Console.WriteLine("yeni2");
 
         }
 

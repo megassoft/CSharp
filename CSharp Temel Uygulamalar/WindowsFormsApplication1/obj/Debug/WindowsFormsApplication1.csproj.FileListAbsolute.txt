@@ -10,3 +10,9 @@ D:\DOTNET2015 Works\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\
 D:\DOTNET2015 Works\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
