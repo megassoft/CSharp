@@ -63,6 +63,16 @@ namespace WindowsFormsApplication1
 
 
         }
+
+        public void yeni6(int weight, string name)
+        {
+
+            Console.WriteLine("yeni6");
+
+
+        }
+
+
     }
 
     class Net
