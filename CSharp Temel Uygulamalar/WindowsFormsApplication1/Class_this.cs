@@ -49,6 +49,13 @@ namespace WindowsFormsApplication1
 
         }
 
+        public void yeni4(int weight, string name)
+        {
+
+            Console.WriteLine("yeni4");
+
+        }
+
     }
 
     class Net
