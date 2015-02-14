@@ -8,3 +8,5 @@ D:\DOTNET2015 Works\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\
 D:\DOTNET2015 Works\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 D:\DOTNET2015 Works\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 D:\DOTNET2015 Works\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
