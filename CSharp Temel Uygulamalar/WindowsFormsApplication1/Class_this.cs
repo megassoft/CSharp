@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
         public Class_this() : this(-1, "noname")
         {
 
-            Console.WriteLine("default constructor555");
+            Console.WriteLine("default constructor558");
 
         }
 
