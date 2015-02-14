@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
         public Class_this() : this(-1, "noname")
         {
 
-            Console.WriteLine("default constructor59");
+            Console.WriteLine("default constructor911");
 
         }
 
@@ -38,6 +38,14 @@ namespace WindowsFormsApplication1
         {
 
             Console.WriteLine("yeni2");
+
+        }
+
+
+        public void yeni3(int weight, string name)
+        {
+
+            Console.WriteLine("yeni3");
 
         }
 

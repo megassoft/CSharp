@@ -16,3 +16,5 @@ D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\D
 D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
 D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 D:\Desktop\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\suatyilmaz\Documents\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\suatyilmaz\Documents\GitHub\CSharp\CSharp Temel Uygulamalar\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
