@@ -59,6 +59,7 @@ namespace WindowsFormsApplication1
         public void yeni5(int weight, string name)
         {
 
+
             Console.WriteLine("yeni62");
 
 
