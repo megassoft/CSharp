@@ -60,7 +60,7 @@ namespace WindowsFormsApplication1
         {
 
 
-            Console.WriteLine("yeni500");
+            Console.WriteLine("yeni400");
 
 
         }
