@@ -20,7 +20,7 @@ namespace WindowsFormsApplication1
 
         }
 
-        public Class_this(int weight) : this (weight, "temp")
+        public Class_this(int weight) : this (weight, "tempt2")
         {
 
             Console.WriteLine("Constructor1 weight = {0}", weight);
@@ -58,7 +58,7 @@ namespace WindowsFormsApplication1
             // this kullanılmasa da olur. Çünkü parametre adı ile lokal değişken adı aynı olmadığından gerekli değildir
             this.Name = name;
 
-            // Pass this instance as a parameter!
+            //Pass this instance as a parameter!
             Net net = new Net(this);
 
             // The Net instance now has the same name.
