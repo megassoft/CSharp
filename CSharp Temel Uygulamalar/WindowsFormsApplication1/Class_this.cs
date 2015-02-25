@@ -6,9 +6,11 @@ using System.Text;
 namespace WindowsFormsApplication1
 {
     class Class_this
-    {
-
-        // overloaded constructor initializer
+			    {
+        
+        int a;
+        
+        //overloaded constructor initializer
         //default initialize
         //diyelim ki new ile instance yaratırken parametresiz tanımlarsak o zaman default olarak this ifadesi ile belirlediğimiz parametreleri overloaded olan constructor a aktaracaktır
         //bir başka avantajı new ile çağırıldığında diğer constructor ların da çalışması için çağırılan yerde satır yazmak yerine bir kere yazılıp direkt this ile yönlendirme yapılmış olur
