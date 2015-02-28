@@ -12,11 +12,30 @@ namespace WindowsFormsApplication1
         //fields for object initializers
         public int deger1;
         public string deger2;
+        public string deger3;
+
+        public static int ortak_alan;
 
         public MyClass_Static(string isim = "(optional) default isim")
         {
 
             MessageBox.Show("MyClass_Static constructors\noptional argument: " + isim);
+
+        }
+
+        //static constructor dan sonra ikinci olarak bu constructor devreye girer ve sınıfa ait nesnenin yeni değerlerin atanmasını sağlar.
+        public MyClass_Static()
+        {
+
+            deger3 = "statik";
+
+        }
+ 
+        //constructor aşamasında ilk olarak static olanı çalışır ve sınıfa özgü alanların (field) değerlerinin atamasını yapar. Bu statik alanlar sınıfa ait nesne oluşturulmaya bağlı olmaksızın sınıfa ait oluşturulan bütün nesneler için ortaktır.
+        static MyClass_Static()
+        {
+
+            ortak_alan = 10; 
 
         }
 
@@ -164,7 +183,7 @@ namespace WindowsFormsApplication1
         public Class_Lessons()
         {
 
-            isimAl = "kaya";
+            isimAl = "kaya";  //inherit edilmiş field
             MessageBox.Show(isimAl);
 
             Class_this test1 = new Class_this();
@@ -173,7 +192,9 @@ namespace WindowsFormsApplication1
 
             Perl test3 = new Perl("parametreye argument olarak 'this' ile bir sınıf atama testi");
         
-            MyClass_Static.test_statik(); 
+            MyClass_Static.test_statik();
+
+            MessageBox.Show(Convert.ToString("static constructor: " + MyClass_Static.ortak_alan));  //inherit edilmiş static constructor
 
             MessageBox.Show("base class x: " + Convert.ToString(base.x));
             MessageBox.Show("current class x: " + Convert.ToString(this.x));
@@ -222,9 +243,64 @@ namespace WindowsFormsApplication1
             else
             {
                 MessageBox.Show("if deneme2 " + "false");
-
-
             }
+
+
+            //Operator Overloading------------------------------------------------------
+            Class_operator_overloading num1 = new Class_operator_overloading(20, 30);
+            Class_operator_overloading num2 = new Class_operator_overloading(50, 60);  
+            
+            Class_operator_overloading sum = num1 + num2;
+
+            Console.WriteLine("First complex number:  {0}", num1);
+            Console.WriteLine("Second complex number: {0}", num2);
+            Console.WriteLine("The sum of the two numbers: {0}", sum);
+
+            Console.WriteLine(num1++);
+            Console.WriteLine(-num1);
+
+            Class_operator_overloading sum2 = num1 + 100;
+            Console.WriteLine("The sum of the two numbers: {0}", sum2);
+
+            if (num1 < num2)
+            {
+                Console.WriteLine("num1 < num2");
+            }
+            else
+            {
+                Console.WriteLine("num1 > num2");
+            }
+
+
+            //Explicit - num1++
+            Class_this num_this = new Class_this();
+            Class_this num_this2 = new Class_this();
+
+            //burada class tek başına parametre olarak aşırı yüklendiği için otomatik olarak aktarılır. ancak tek şartla o da aktarıldığı değerin değişken tipi implicit ile aynı olmalı
+            //maalesef diğer overlofing olan operatorler çalıştıktan sonra (num1++ gibi) ardından tekrar implicit operatoru otomatik çalışacaktır. ama Explicit operatorü değişken dönüşümü ( requires cast ) bildirilmediği sürece ( (int)num1 gibi ) otomatik gelmez ve bu yöntem daha iyidir
+            int xImplicit;
+            xImplicit = num_this;
+
+            //burada ise implicit operatorü çalışmaz çünkü implicit operatorü aşırı yüklemesinde sadece int tanımlandığı için çalışmaz ve normal class aktarılması işlemi yapılır
+            num_this2 = num_this;
+
+            Console.WriteLine("Implicit: " + xImplicit);
+
+            //Explicit operatorü açık olarak hangi değişkene döndürülmesi gerektiği bildirilmedilir. implicit gibi değişken dönüşümü ( requires cast ) bildirilmediği sürece ( (int)num1 gibi ) otomatik devreye girmez. daha güvenlidir.
+            Console.WriteLine("Explicit class to int: " + (int)num1);
+
+            int xExplicit = 10;
+            Console.WriteLine("Explicit int to class: " + (Class_operator_overloading)xExplicit);
+
+            Class_operator_overloading explicitClass = (Class_operator_overloading)xExplicit;
+            Console.WriteLine("Explicit int to class2: " + explicitClass.deger1 + " ve " + explicitClass.deger2);
+
+            //------------------------------------------
+
+
+            //-------------------------------------------------------------------------
+
+
         }
 
         //recursive method
@@ -262,11 +338,12 @@ namespace WindowsFormsApplication1
 
         }
 
-        //~Class_Lessons()
-        //{
+        ~Class_Lessons()
+        {
 
+            Console.WriteLine("Class_Lessons: çıkış");
 
-        //}
+        }
 
 
     }

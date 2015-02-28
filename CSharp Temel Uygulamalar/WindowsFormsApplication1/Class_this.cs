@@ -12,11 +12,13 @@ namespace WindowsFormsApplication1
         //default initialize
         //diyelim ki new ile instance yaratırken parametresiz tanımlarsak o zaman default olarak this ifadesi ile belirlediğimiz parametreleri overloaded olan constructor a aktaracaktır
         //bir başka avantajı new ile çağırıldığında diğer constructor ların da çalışması için çağırılan yerde satır yazmak yerine bir kere yazılıp direkt this ile yönlendirme yapılmış olur
-        
+
+        int a = 10;
+
         public Class_this() : this(-1, "noname")
         {
 
-            Console.WriteLine("default constructor911");
+            Console.WriteLine("default constructor");
 
         }
 
@@ -33,46 +35,13 @@ namespace WindowsFormsApplication1
             Console.WriteLine("Constructor2 weight = {0}, name = {1}", weight, name);
 
         }
-
-        public void yeni2(int weight, string name)
+        
+        public static implicit operator int(Class_this c1)
         {
 
-            Console.WriteLine("yeni2");
+            return c1.a;
 
         }
-
-
-        public void yeni3(int weight, string name)
-        {
-
-            Console.WriteLine("yeni34");
-
-        }
-
-        public void yeni4(int weight, string name)
-        {
-
-            Console.WriteLine("yeni4");
-
-        }
-
-        public void yeni5(int weight, string name)
-        {
-
-
-            Console.WriteLine("yeni4000");
-
-
-        }
-
-        public void yeni6(int weight, string name)
-        {
-
-            Console.WriteLine("yeni6");
-
-
-        }
-
 
     }
 
